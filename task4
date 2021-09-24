@@ -1,8 +1,8 @@
 MOV A, 0xE7
+MOV B, 0xFF
 MOV [A], 1
 .loop:
 INC A
-MOV [A],239
-MOV B, 0xFF  
+MOV [A],239  
 CMP B, A	
 JNZ .loop	

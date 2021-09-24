@@ -1,0 +1,8 @@
+MOV A, 0xE7
+MOV [A],1
+.loop:
+INC A
+MOV [A],1
+MOV B, 0xFF  
+CMP B, A	
+JNZ .loop

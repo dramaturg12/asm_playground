@@ -1,0 +1,7 @@
+MOV A, 127
+.loop:
+INC A
+MOV [A],1
+MOV B,143  
+CMP B, A	
+JNZ .loop
